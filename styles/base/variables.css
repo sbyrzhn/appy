@@ -1,0 +1,16 @@
+:root {
+	--color-dark: #0f172a;
+	--color-light: #fff;
+	--color-accent: #2563eb;
+
+	--border-radius: 8px;
+
+	--font-family: "Roboto", sans-serif;
+
+	--input-height: 64px;
+
+	--container-width: 1280px;
+	--container-padding-x: 15px;
+
+	--transition-duration: 0.2s;
+}
