@@ -3,3 +3,7 @@
 	padding-inline: var(--container-padding-x);
 	margin-inline: auto;
 }
+
+.transparent {
+	background-color: transparent;
+}

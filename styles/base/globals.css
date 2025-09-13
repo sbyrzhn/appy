@@ -7,6 +7,14 @@ body {
 	color: var(--color-dark);
 }
 
+a,
+button,
+input,
+textarea,
+svg * {
+	transition-duration: var(--transition-duration);
+}
+
 a {
 	color: var(--color-dark);
 	text-decoration: none;

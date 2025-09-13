@@ -4,8 +4,9 @@
 	justify-content: space-between;
 	column-gap: 24px;
 	padding-inline: 24px;
-	height: 96px;
 	border: 1px solid #e2e8f0;
+	letter-spacing: 0.5px;
+	height: 96px;
 }
 
 .header-left {
@@ -20,6 +21,10 @@
 	color: var(--color-accent);
 }
 
+.logo:hover {
+	color: var(--color-dark);
+}
+
 .header-menu-list {
 	display: flex;
 	column-gap: 8px;
@@ -30,6 +35,8 @@
 	align-items: center;
 	padding: 12px 8px;
 	column-gap: 8px;
+	font-size: 16px;
+	font-weight: 500;
 }
 
 .header-menu-link.has-dropdown::after {
@@ -39,26 +46,60 @@
 	background: url("../../assets/icons/chevron-down.svg") center/cover no-repeat;
 }
 
+.header-burger-menu {
+	display: none;
+}
+
 .header-actions {
 	display: flex;
 	column-gap: 16px;
 }
 
-.button {
+.header-login-button {
 	font-weight: 500;
 	font-size: 16px;
-	color: var(--color-light);
-	background-color: var(--color-accent);
-	border-radius: var(--border-radius);
+	color: var(--color-accent);
+	padding: 12px 24px;
 	border: none;
 }
 
-.header-login-button {
-	color: var(--color-accent);
-	background-color: transparent;
-	padding: 12px 24px;
+.header-login-button:hover {
+	color: var(--color-dark);
 }
 
-.header-get-started-button {
+.header-get-started-button.button {
 	padding: 12px 28px;
+}
+
+.header-get-started-button.button:hover {
+	background-color: var(--color-dark);
+}
+
+@media (max-width: 393px) {
+	.header {
+		justify-content: space-between;
+		padding-inline: 0;
+		height: 67px;
+	}
+
+	.header-left {
+		column-gap: 0;
+		padding-inline: 16px;
+		justify-content: space-between;
+		width: 100vw;
+	}
+
+	.header-menu,
+	.header-actions {
+		display: none;
+	}
+
+	.header-burger-menu {
+		display: block;
+		width: 24px;
+		height: 24px;
+		border: none;
+		text-align: center;
+		background-color: transparent;
+	}
 }
