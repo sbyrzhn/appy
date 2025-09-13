@@ -3,3 +3,5 @@
 @import url("./base/variables.css");
 @import url("./base/globals.css");
 @import url("./base/utils.css");
+
+@import url("./blocks/header.css");

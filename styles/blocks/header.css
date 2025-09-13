@@ -1,0 +1,64 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	column-gap: 24px;
+	padding-inline: 24px;
+	height: 96px;
+	border: 1px solid #e2e8f0;
+}
+
+.header-left {
+	display: flex;
+	align-items: center;
+	column-gap: 48px;
+}
+
+.logo {
+	font-size: 32px;
+	font-weight: 700;
+	color: var(--color-accent);
+}
+
+.header-menu-list {
+	display: flex;
+	column-gap: 8px;
+}
+
+.header-menu-link {
+	display: inline-flex;
+	align-items: center;
+	padding: 12px 8px;
+	column-gap: 8px;
+}
+
+.header-menu-link.has-dropdown::after {
+	content: "";
+	width: 24px;
+	height: 24px;
+	background: url("../../assets/icons/chevron-down.svg") center/cover no-repeat;
+}
+
+.header-actions {
+	display: flex;
+	column-gap: 16px;
+}
+
+.button {
+	font-weight: 500;
+	font-size: 16px;
+	color: var(--color-light);
+	background-color: var(--color-accent);
+	border-radius: var(--border-radius);
+	border: none;
+}
+
+.header-login-button {
+	color: var(--color-accent);
+	background-color: transparent;
+	padding: 12px 24px;
+}
+
+.header-get-started-button {
+	padding: 12px 28px;
+}
